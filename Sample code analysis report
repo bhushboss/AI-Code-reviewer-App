@@ -25,3 +25,39 @@ Markdown:
 
 ## 🎨 Style Report (flake8)
 
+your_code.py:1:1: F401 'os' imported but unused
+your_code.py:3:1: E302 expected 2 blank lines, found 1
+your_code.py:3:13: E231 missing whitespace after ','
+your_code.py:3:18: E203 whitespace before ':'
+your_code.py:4:5: E127 continuation line over-indented for visual indent
+your_code.py:4:7: E131 continuation line unaligned for hanging indent
+your_code.py:8:5: F841 local variable 'unused_var' is assigned to but never used
+
+## 🔬 Complexity Report (radon)
+
+**Raw Metrics:**
+- Lines of Code (LOC): 10
+- Logical Lines of Code (LLOC): 8
+- Source Lines of Code (SLOC): 8
+- Comment Lines: 0
+- Single-line Comments: 0
+- Blank Lines: 2
+
+**Cyclomatic Complexity:**
+- **Function `my_func`**: Complexity: **3** (Rank: **A**)
+
+## ✨ Recommended Formatting (black)
+
+```python
+import os
+
+
+def my_func(a, b):
+    if a > b:
+        print("a is greater")
+    elif b > a:
+        print("b is greater")
+    else:
+        print("equal")
+    unused_var = 1
+
