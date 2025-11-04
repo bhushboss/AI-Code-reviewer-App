@@ -1,0 +1,27 @@
+Sample input :
+import os
+
+def my_func( a,b ):
+    if a>b:
+        print('a is greater')
+    elif b>a:
+        print('b is greater')
+    else:
+        print('equal')
+    unused_var = 1
+
+Generated:
+
+code_analysis_report.md
+Markdown:
+# Code Analysis Report
+
+## 📊 Summary
+
+* **Total Lines of Code (LOC):** 10
+* **Logical Lines of Code (LLOC):** 8
+* **Functions/Methods Found:** 1
+* **Average Complexity:** 3.00
+
+## 🎨 Style Report (flake8)
+
